@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div >
+    <div id="header" class="glass "> <!-- Header includes Nav bar whole background photo and header text i.e. Hi i am *** -->
+        <div class="container">
+            <nav>
+                <img src="images/my_logo_final.jpg" class="logo" alt="logo"> 
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Pratyush Anand</span> <br>from India</h1>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="about" class="glass"> <!-- About section includes profile photo, About me information, skills,education and experience-->
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 glass">
+                    <img src="images/Pratyush_photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius asperiores repellendus, at possimus reprehenderit commodi, excepturi eligendi fugit debitis voluptatibus minima dolore illo nihil dignissimos non veniam temporibus molestias adipisci quidem tempora! Autem, officiis enim nisi ipsa voluptatibus unde dolores sed numquam ullam, ipsum doloremque officia laboriosam sit aliquid labore.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, Javascript, HTML</li>
+                            <li><span>Frameworks</span><br>React.JS, Redux.JS, Tailwind UI</li>
+                            <li><span>Development</span><br>Designing Web Pages</li>
+                            <li><span>Databases</span><br>SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Software Developer Trainee at Hoping Minds</li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Bachelors in Computer Science at DIT University, Dehradun</li>
+                            <li><span>2020</span><br>High Secondary schooling from St.Karens High School, Patna</li>
+                            <li><span>2018</span><br>High Secondary schooling from St.Karens High School, Patna</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section-->
+
+    <div id="services" class="glass">
+        <div class="container ">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Making web pages the most functional that they can be, all while making them visually pleasing and aesthetic to the eye.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UX Prototyping</h2>
+                    <p>Create a mockup of your ideal software so that you can pitch it to investors of your company.It is not Ideal to build entire software.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Redesigning UI</h2>
+                    <p>If you think that redesigning the user interface of your existing software, then I am here with the Solution to redesign it.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio section-->
+
+    <div id="portfolio" class="glass">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/netflixs-new-logo.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix-GPT App</h3>
+                        <p>User can see movie trailers and can Search movies according to their warch mood through GPT</p>
+                        <a href="https://github.com/pratyush-1pratyush/netflix-GPT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/zyka_logo.jpg" alt="">
+                    <div class="layer">
+                        <h3>Restaurant Menu App</h3>
+                        <p>Users can find restaurant of their choice and select food items and can add to their cart  </p>
+                        <a href="https://github.com/pratyush-1pratyush/netflix-GPT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/youtube_logo.jpg" alt="">
+                    <div class="layer">
+                        <h3>Youtube LiveChat WebApp</h3>
+                        <p>User can see videos of their choice and can chat live with multiple users</p>
+                        <a href="https://github.com/pratyush-1pratyush/netflix-GPT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/pratyush-1pratyush" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section-->
+
+    <div id="contact" class="glass">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>anandpratyush1666@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91 6205453460</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100006401958968"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/iamh_enry/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Resume_Pratyush.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Pratyush. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+   </div>
+   
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+
+       
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxR03zxFksJDTgesrD_QlKzfpQLZqCIEzRRwCZdSMKtoAiXp87XHrQjofaIrKwssuFvHg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            console.log(msg);
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    console.log(msg.innerHTML);
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        
+    </script>
+
+</body>
+</html>
